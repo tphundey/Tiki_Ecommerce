@@ -6,7 +6,7 @@ var HomePage = function () {
     const [data, setData] = useState([])
 
     useEffect(function () {
-        fetch('http://localhost:3000/books') //xac dinh du lieu lay api
+        fetch('https://tiki-data.vercel.app/books') //xac dinh du lieu lay api
             .then(function (res) {
                 return res.json()
             })

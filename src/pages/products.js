@@ -9,7 +9,7 @@ var ProductPage = function (id, idcate) {
 
     useEffect(function () {
 
-        fetch(`http://localhost:3000/books/${id}?${idcate}`)
+        fetch(`https://tiki-data.vercel.app/books/${id}?${idcate}`)
             .then(function (res) {
                 return res.json()
             })
@@ -21,7 +21,7 @@ var ProductPage = function (id, idcate) {
     }, [])
 
     useEffect(function () {
-        fetch(`http://localhost:3000/books?categories.id=${id_cate}`)
+        fetch(`https://tiki-data.vercel.app/books?categories.id=${id_cate}`)
             .then(function (res) {
                 return res.json()
             })
